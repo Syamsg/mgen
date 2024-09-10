@@ -190,7 +190,7 @@ class FollowUp
     {
         $storeId = $subscriber->getStoreId();
         $templateId = $popup->getData('followup_email_template');
-        $senderName = $popup->getData('followup_sender_email');
+        $senderName = $popup->getData('followup_sender_name');
         $senderEmail = $popup->getData('followup_sender_email');
         $sendTo = $subscriber->getData('subscriber_email');
 
