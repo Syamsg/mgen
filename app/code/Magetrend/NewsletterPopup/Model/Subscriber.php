@@ -253,7 +253,7 @@ class Subscriber
 
         $delay = $popup->getFollowupDelay();
         if ($popup->getFollowupIsActive() == 1 && $delay > 0) {
-            $subscriber->setNpFollowupDate($this->date->date('Y-m-d H:i:s', time() + ($delay * 60 * 60)));
+            $subscriber->setNpFollowupDate($this->date->date('Y-m-d H:i:s', time() + ($delay * 60)));
             $subscriber->setNpFollowupStatus(1);
         }
 
